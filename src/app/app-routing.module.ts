@@ -3,9 +3,15 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-  path: "",
-  pathMatch: "full",
-  loadChildren: () => import('./features/product/product.routing').then(m => m.ProductRoutingModule),
+    path: 'product-detail',
+    loadChildren: () =>
+        import('./features/product/product.module').then(
+            m => m.ProductModule
+        ),
+},
+{
+    path: '**',
+    redirectTo: 'product-detail',
 },
 ];
 

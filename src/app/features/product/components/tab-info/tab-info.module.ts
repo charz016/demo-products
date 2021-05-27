@@ -1,18 +1,18 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { CarrouselProductComponent } from './carrousel-product.component';
+import { TabInfoComponent } from './tab-info.component';
 
 
 
 @NgModule({
   declarations: [
-    CarrouselProductComponent
+    TabInfoComponent
   ],
   imports: [
     CommonModule
   ],
   exports:[
-    CarrouselProductComponent
+    TabInfoComponent
   ]
 })
-export class CarrouselProductModule { }
+export class TabInfoModule { }
