@@ -1,0 +1,37 @@
+.footer-container{
+    height: 150px;
+    background-color: #F5F5F7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 0px 20px 0px 0px;
+    box-shadow: 0px -1px 3px rgba(216, 214, 214, 0.75);
+
+    h1{
+        margin: 0;
+    }
+    p{
+        margin-top: 0;
+        color: #A6ABB4;
+    }
+    button{
+        background-color: #1897D5;
+        color: white;
+        font-weight: bold;
+        border: none;
+        border-radius: 8px;
+        width: 110px;
+        height: 55px;
+        cursor: pointer;
+
+        &:hover{
+            background-color: #66BFEC;
+        }
+
+        &:focus{
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+
+    }
+}
