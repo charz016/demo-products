@@ -88,12 +88,6 @@ input[type="radio"] {
         
     }
 
-    .container-detail-info-cards{
-        width: 700px;
-    }
-
-
-
 }
 
 
@@ -106,6 +100,11 @@ input[type="radio"] {
         display: none;
     }
 
+   
+
+}
+
+@media screen and (max-width: 1280px) {
     .container-detail-info-cards{
         max-width: 600px;
         margin: 0 auto;
