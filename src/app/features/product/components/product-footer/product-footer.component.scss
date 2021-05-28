@@ -9,13 +9,14 @@
     box-shadow: 0px -1px 3px rgba(216, 214, 214, 0.75);
     position: sticky;
 
-
-    h1{
+    h2{
         margin: 0;
     }
     p{
         margin-top: 0;
         color: #A6ABB4;
+        font-weight: bold;
+        font-size: 0.9rem;
     }
     button{
         background-color: #1897D5;
@@ -36,4 +37,62 @@
         }
 
     }
+
+    &-warranty{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+.footer-container{
+    flex-direction: row;
+    justify-content: space-around;
+    height: 100px;
+
+    &-warranty{
+        display: block;
+        display: flex;
+        flex-direction: column;
+
+        h5{
+            margin: 10px 0;
+        }
+        
+        &-text{
+
+            p{
+                display: none;                
+            }
+        }
+    }
+
+    &-buy{
+        display: flex;
+        &-text{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            margin-right: 40px;
+        }
+    }
+}
+
+}
+
+@media screen and (min-width: 1280px) {
+
+.footer-container-warranty{
+    display: flex;
+    flex-direction: row;
+
+    p{
+        display: block;
+        font-size: 0.9rem;
+    }
+
+    &-text{
+        max-width: 300px;
+    }
+}
+
 }
