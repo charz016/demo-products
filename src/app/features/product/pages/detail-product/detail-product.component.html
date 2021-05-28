@@ -1,8 +1,10 @@
 <div class="container-detail">
 
     <div class="container-detail-carrousel">
-        <carrousel-product></carrousel-product>
-        <product-icons class="container-icons"></product-icons>
+        <div class="container-detail-carrousel-fixed">
+            <carrousel-product></carrousel-product>
+            <product-icons class="container-icons"></product-icons>
+        </div>
     </div>
     <div class="container-detail-info">
         <product-info></product-info>
@@ -11,87 +13,20 @@
 
         <div style="padding: 10px;">
             <h3>Choose you finish</h3>
-
-            <div class="container-cards">
-                <label for="card1" class="radbox">
-                    <input type="radio" id="card1" name="payment_mode" checked>
-                    <span class='rad-text'>
-                        <p>Ivory White</p>
-                        <span>For the past 75 years, Sennheiser has put sound first.</span>
-                    </span>
-                </label>
-                <label for="card2" class="radbox">
-                    <input type="radio" id="card2" name="payment_mode">
-                    <span class='rad-text'>
-                        <p>
-                            Matte Black
-                        </p>
-                        <span>
-                            of all the celestial bodies that capture our attention and fascination as astronomer
-                        </span>
-                    </span>
-                </label>
-            </div>
-
+            <product-radio-cards [cards]="cards"></product-radio-cards>
         </div>
 
+
+
         <div style="padding: 10px;">
-
             <h3>Would you like to add extended</h3>
-
-            <div class="container-cards">
-                <label for="card3" class="radbox">
-                    <input type="radio" id="card3" name="payment_mode" checked>
-                    <span class='rad-text'>
-                        <p>2 years coverage</p>
-                        <span>For the past 75 years, Sennheiser has put sound first.</span>
-                    </span>
-                </label>
-                <label for="card4" class="radbox">
-                    <input type="radio" id="card4" name="payment_mode">
-                    <span class='rad-text'>
-                        <p>
-                            3 years coverage
-                        </p>
-                        <div class="rad-text-price">
-                            <span>
-                                of all the celestial bodies that capture our attention and fascination as astronomer
-                            </span>
-                            <p>
-                                + $75
-                            </p>
-                        </div>
-                    </span>
-                </label>
-            </div>
-
+            <product-radio-cards [cards]="cards2"></product-radio-cards>
         </div>
 
         <div style="padding: 10px;">
 
             <h3>Features</h3>
-
-            <div class="container-cards">
-                <label for="card5" class="radbox">
-                    <input type="radio" id="card5" name="payment_mode" checked>
-                    <span class='rad-text'>
-                        <p>Voice Assitance support</p>
-                    </span>
-                </label>
-                <label for="card6" class="radbox">
-                    <input type="radio" id="card6" name="payment_mode">
-                    <span class='rad-text'>
-                        <div class="rad-text-price">
-                            <p>
-                                Cusomisable controls
-                            </p>
-                            <p>
-                                + $75
-                            </p>
-                        </div>
-                    </span>
-                </label>
-            </div>
+            <product-radio-cards [cards]="cards3"></product-radio-cards>
 
         </div>
 

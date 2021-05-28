@@ -1,0 +1,55 @@
+.radbox {
+	position: relative;
+	cursor: pointer;
+	border: none;
+    outline: none;
+    margin: 10px;
+
+	input[type='radio'] {
+		display: none;
+	}
+	.rad-text {
+		content: '';
+		display: flex;
+		flex-direction: column;
+		border: 2px solid gray;
+        border-radius: 15px;
+		padding: 10px;
+		color: black;
+        font-weight: bold;
+        min-width: 250px;
+        span{
+			color: gray;
+
+        }
+        &-price{
+            display: flex;
+            justify-content: space-between;
+			
+			@media screen and (max-width: 768px) {
+				span{
+					width: 220px;
+				}
+
+			}
+        }
+	}
+}
+input[type="radio"] {
+	&:checked {
+		+ {
+			.rad-text {
+				content: '';
+                border: 2px solid #299FD8;
+                min-width: 250px;
+
+			}
+		}
+	}
+}
+
+.container-price{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}

@@ -1,1 +1,42 @@
-<p>product-radio-cards works!</p>
+<div class="container-cards">
+
+    <div class="input-group radio-boxes">
+        <div class="form-group">
+            <div *ngFor="let card of cards">
+                <label for="radio-{{card.title}}" class="radbox">
+                    <input type="radio" id="radio-{{card.title}}" name="payment_mode" checked>
+                    <span class='rad-text'>
+                        <div *ngIf="card.description">
+                            <p>
+                                {{card.title}}
+                            </p>
+                            <div [class.rad-text-price]="card.price > 0">
+                                <span>
+                                    {{card.description}}
+                                </span>
+                                <p *ngIf="card.price > 0">
+                                    + {{card.price}}
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div *ngIf="!card.description">
+                           <div class="container-price">
+                            <p>
+                                {{card.title}}
+                            </p>
+                            <p *ngIf="card.price > 0">
+                                + {{card.price}}
+                            </p>
+
+                           </div>
+                        </div>
+                    </span>
+                </label>
+
+            </div>
+
+        </div>
+    </div>
+</div>

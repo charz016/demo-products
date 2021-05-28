@@ -7,6 +7,11 @@
             border-bottom: 1px dotted #CCC;
             margin-bottom: 10px;
             padding-bottom: 10px;
+
+            @media screen and (min-width: 768px) {
+                display: flex;
+                justify-content: space-between;
+            }
         }
     }
     
