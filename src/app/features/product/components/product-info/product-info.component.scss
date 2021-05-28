@@ -6,10 +6,41 @@
     &-info{
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
+    min-width: 560px;
+
+    &-text{
+        &-title{
+            color: #D33F54;
+            margin: 0;
+        }
+        &-h1{
+            margin: 10px 0;
+        }
+        &-h2{
+            color: #767D8A;
+            font-weight: normal;
+            margin-top: 0;
+            margin-bottom: 50px;
+        }
+        &-p{
+            color: #767D8A;
+            margin: 0;
+        }
+    }
+
     }
 
     &-tab{
         margin-top: 50px;
         margin-bottom: 50px;
     }
+}
+
+@media screen and (min-width: 1280px) {
+
+    .container-info{
+        margin: 0;
+    }
+
 }

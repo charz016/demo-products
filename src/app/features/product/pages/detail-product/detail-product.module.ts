@@ -6,6 +6,7 @@ import { ProductInfoModule } from '../../components/product-info/product-info.mo
 import { ProductSpecificationsModule } from '../../components/product-specifications/product-specifications.module';
 import { ProductRadioCardsModule } from '../../components/product-radio-cards/product-radio-cards.module';
 import { ProductFooterModule } from '../../components/product-footer/product-footer.module';
+import { ProductIconsModule } from '../../components/product-icons/product-icons.module';
 
 
 
@@ -20,6 +21,7 @@ import { ProductFooterModule } from '../../components/product-footer/product-foo
     ProductSpecificationsModule,
     ProductRadioCardsModule,
     ProductFooterModule,
+    ProductIconsModule
   ],
   exports:[
     DetailProductComponent

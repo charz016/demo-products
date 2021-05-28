@@ -4,12 +4,21 @@
     src: url('assets/fonts/Circular-Std-Book.otf') format('opentype');
 }
 
-
-
-
 body{
     font-family: 'Circular Std';
     margin: 0;
     padding: 0;
     
+}
+
+.container-tab{
+    margin: 0 auto;
+  }
+
+  @media screen and (min-width: 1280px) {
+
+    .container-tab{
+        margin: 0 ;
+      }
+
 }

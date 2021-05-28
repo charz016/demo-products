@@ -1,0 +1,32 @@
+.container-icons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+        &-text{
+            display: flex;
+            flex-direction: column;
+            font-size: 1rem;
+            padding-top: 30px;
+            justify-content: center;
+            align-items: center;
+        }
+    
+    }
+    
+    .icons-text{
+        display: inline-block;
+        text-align: center;
+        font-size: 0.8rem;
+        padding-right: 25px;
+        padding-left: 25px;
+        padding-top: 30px;
+    }
+    
+
+@media screen and (min-width: 768px) {
+.container-icons{
+    flex-direction: row;
+    margin-bottom: 50px;
+}
+}

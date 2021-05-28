@@ -24,6 +24,7 @@
   border-bottom: 0;
   cursor: pointer;
   font-weight: 600;
+  font-size: 1.1rem;
 }
 
 .tabset > label::after {
@@ -54,5 +55,9 @@
 
 .tab-panel {
   padding: 0 5px;
+  max-width: 550px;
 }
+
+
+
 

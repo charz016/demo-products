@@ -1,35 +1,14 @@
-.container-icons{
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-    &-text{
-        display: flex;
-        flex-direction: column;
-        font-size: 1rem;
-        padding-right: 25px;
-        padding-left: 25px;
-        padding-top: 30px;
-        justify-content: center;
-        align-items: center;
-    }
-
-}
-
-.icons-text{
-    display: inline-block;
-    text-align: center;
-    font-size: 1rem;
-    padding-right: 25px;
-    padding-left: 25px;
-    padding-top: 30px;
-}
-
 .container-cards{
     display: flex;
     flex-direction: column;
     margin-top: 10px;
 }
+
+
+.container-icons{
+    display: none;
+}
+
 
 .radbox {
 	position: relative;
@@ -50,8 +29,8 @@ align-items: center;
 		padding: 10px;
 		color: black;
         font-weight: bold;
-        width: 270px;
-		span{
+        min-width: 250px;
+        span{
 			color: gray;
 
         }
@@ -69,8 +48,9 @@ input[type="radio"] {
 		+ {
 			.rad-text {
 				content: '';
-				display: inline-flex;
                 border: 2px solid #299FD8;
+                min-width: 250px;
+
 			}
 		}
 	}
@@ -82,4 +62,35 @@ input[type="radio"] {
 
 .specifications-container{
     margin-bottom: 100px;
+}
+
+
+
+@media screen and (min-width: 1280px) {
+    .container-detail{
+        display: flex;
+        &-carrousel{
+            width: 50%;
+    
+        }
+        &-info{
+            width: 50%;
+            padding: 40px 0;
+        }
+        
+    }
+
+
+
+}
+
+
+@media screen and (min-width: 768px) {
+    .container-icons{
+        display: block;
+    }
+
+    .container-icons-2{
+        display: none;
+    }
 }
