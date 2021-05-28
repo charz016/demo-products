@@ -14,8 +14,6 @@ export class DetailProductComponent implements OnInit {
   cards: CardProduct[] = CARD_MOCK;
   cards2: CardProduct[] = CARD_MOCK2;
   cards3: CardProduct[] = CARD_MOCK3;
-  responsiveRow:boolean=true;
-
 
 
   ngOnInit(): void {

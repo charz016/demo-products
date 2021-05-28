@@ -9,11 +9,11 @@ import { CardProduct } from 'src/app/shared/models/card';
 export class ProductRadioCardsComponent implements OnInit {
 
   @Input() cards: CardProduct[] = [];
+  @Input() rowCard: boolean = false;
 
   constructor() { }
 
   ngOnInit(): void {
-    console.log(this.cards);
     
   }
 

@@ -11,26 +11,26 @@
 
         <product-icons class="container-icons-2"></product-icons>
 
-        <div style="padding: 10px;">
+        <div class="container-detail-info-cards">
             <h3>Choose you finish</h3>
-            <product-radio-cards [cards]="cards"></product-radio-cards>
+            <product-radio-cards [cards]="cards" [rowCard]="true"></product-radio-cards>
         </div>
 
 
 
-        <div style="padding: 10px;">
+        <div class="container-detail-info-cards">
             <h3>Would you like to add extended</h3>
             <product-radio-cards [cards]="cards2"></product-radio-cards>
         </div>
 
-        <div style="padding: 10px;">
+        <div class="container-detail-info-cards">
 
             <h3>Features</h3>
             <product-radio-cards [cards]="cards3"></product-radio-cards>
 
         </div>
 
-        <div style="padding: 10px;">
+        <div class="container-detail-info-cards">
             <div>
                 <h3 class="title-border">Specification.</h3>
                 <product-specifications></product-specifications>

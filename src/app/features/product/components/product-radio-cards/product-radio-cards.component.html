@@ -1,11 +1,11 @@
 <div class="container-cards">
 
     <div class="input-group radio-boxes">
-        <div class="form-group">
+        <div class="form-group" [class.form-group-row]="rowCard">
             <div *ngFor="let card of cards">
-                <label for="radio-{{card.title}}" class="radbox">
+                <label for="radio-{{card.title}}" class="radbox" >
                     <input type="radio" id="radio-{{card.title}}" name="payment_mode" checked>
-                    <span class='rad-text'>
+                    <span class='rad-text' [class.row-card]="rowCard">
                         <div *ngIf="card.description">
                             <p>
                                 {{card.title}}
@@ -22,15 +22,15 @@
                         </div>
 
                         <div *ngIf="!card.description">
-                           <div class="container-price">
-                            <p>
-                                {{card.title}}
-                            </p>
-                            <p *ngIf="card.price > 0">
-                                + {{card.price}}
-                            </p>
+                            <div class="container-price">
+                                <p>
+                                    {{card.title}}
+                                </p>
+                                <p *ngIf="card.price > 0">
+                                    + {{card.price}}
+                                </p>
 
-                           </div>
+                            </div>
                         </div>
                     </span>
                 </label>

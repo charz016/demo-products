@@ -12,8 +12,8 @@
 		content: '';
 		display: flex;
 		flex-direction: column;
-		border: 2px solid gray;
-        border-radius: 15px;
+		border: 2px solid #e1e1e2;
+        border-radius: 10px;
 		padding: 10px;
 		color: black;
         font-weight: bold;
@@ -29,6 +29,13 @@
 			@media screen and (max-width: 768px) {
 				span{
 					width: 220px;
+				}
+
+			}
+
+			@media screen and (min-width: 768px) {
+				span{
+					width: 400px;
 				}
 
 			}
@@ -52,4 +59,18 @@ input[type="radio"] {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+}
+
+
+@media screen and (min-width: 768px) {
+	.row-card{
+		width: 80px;
+		height: 100px;
+		margin: 0px 20px ;
+	}
+
+	.form-group-row{
+		display: flex;
+	}
+
 }
