@@ -7,7 +7,6 @@
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    min-width: 560px;
 
     &-text{
         &-title{
@@ -43,4 +42,11 @@
         margin: 0;
     }
 
+}
+
+@media screen and (min-width: 600px){
+    .container-info{
+        min-width: 560px;
+
+    }
 }
