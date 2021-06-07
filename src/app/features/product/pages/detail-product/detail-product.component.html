@@ -13,20 +13,20 @@
 
         <div class="container-detail-info-cards">
             <h3>Choose you finish</h3>
-            <product-radio-cards [cards]="cards" [rowCard]="true"></product-radio-cards>
+            <product-radio-cards [cards]="cards" [rowCard]="true" (price)="emitPrice($event)"></product-radio-cards>
         </div>
 
 
 
         <div class="container-detail-info-cards">
             <h3>Would you like to add extended</h3>
-            <product-radio-cards [cards]="cards2"></product-radio-cards>
+            <product-radio-cards [cards]="cards2"  (price)="emitPrice($event)"></product-radio-cards>
         </div>
 
         <div class="container-detail-info-cards">
 
             <h3>Features</h3>
-            <product-radio-cards [cards]="cards3"></product-radio-cards>
+            <product-radio-cards [cards]="cards3" (price)="emitPrice($event)"></product-radio-cards>
 
         </div>
 
@@ -41,5 +41,5 @@
 
 
 <div>
-    <product-footer></product-footer>
+    <product-footer [productPrice]="productPrice" [coverage]="coverage"></product-footer>
 </div>

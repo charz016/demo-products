@@ -15,8 +15,16 @@ export class DetailProductComponent implements OnInit {
   cards2: CardProduct[] = CARD_MOCK2;
   cards3: CardProduct[] = CARD_MOCK3;
 
+  productPrice:number=295.95;
+  coverage:number=0;
+
 
   ngOnInit(): void {
   }
+
+  emitPrice(price:number){
+    this.coverage = price;
+  }
+
 
 }

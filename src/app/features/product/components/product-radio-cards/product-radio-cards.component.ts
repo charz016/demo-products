@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, Output,EventEmitter } from '@angular/core';
 import { CardProduct } from 'src/app/shared/models/card';
 
 @Component({
@@ -11,10 +11,18 @@ export class ProductRadioCardsComponent implements OnInit {
   @Input() cards: CardProduct[] = [];
   @Input() rowCard: boolean = false;
 
+  @Output() price = new EventEmitter<number>();
+
+
   constructor() { }
 
   ngOnInit(): void {
     
+  }
+
+  handleChange(event:any,price:number){
+    this.price.emit(price)
+
   }
 
 }

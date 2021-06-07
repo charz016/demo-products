@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'product-footer',
@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductFooterComponent implements OnInit {
 
+  @Input() productPrice:number=0;
+  @Input() coverage:number=0;
+
+  productTotal:number=0;
+
   constructor() { }
 
   ngOnInit(): void {
+    this.productTotal = this.productPrice + this.coverage;
   }
 
 }

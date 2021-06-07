@@ -4,7 +4,7 @@
         <div class="form-group" [class.form-group-row]="rowCard">
             <div *ngFor="let card of cards">
                 <label for="radio-{{card.title}}" class="radbox" >
-                    <input type="radio" id="radio-{{card.title}}" name="payment_mode" checked>
+                    <input type="radio" id="radio-{{card.title}}" name="payment_mode" checked (change)="handleChange($event,card.price)" >
                     <span class='rad-text' [class.row-card]="rowCard">
                         <div *ngIf="card.description">
                             <p>
